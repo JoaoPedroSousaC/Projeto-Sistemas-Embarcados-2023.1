@@ -163,7 +163,7 @@ void atualizarDist()
             {
                 gpio_set_level(RELE1, 1);
             }
-            if (temp < tempEscolhida)
+            if ((temp < tempEscolhida) && (porcentagem > 10))
             {
                 gpio_set_level(RELE2, 0);
             }
